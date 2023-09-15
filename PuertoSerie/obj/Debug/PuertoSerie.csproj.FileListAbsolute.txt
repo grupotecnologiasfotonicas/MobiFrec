@@ -1,0 +1,12 @@
+C:\Users\smccoo\Source\Repos\grupotecnologiasfotonicas\PuertoSerie\PuertoSerie\bin\Debug\PuertoSerie.dll
+C:\Users\smccoo\Source\Repos\grupotecnologiasfotonicas\PuertoSerie\PuertoSerie\bin\Debug\PuertoSerie.pdb
+C:\Users\smccoo\Source\Repos\grupotecnologiasfotonicas\PuertoSerie\PuertoSerie\obj\Debug\PuertoSerie.csproj.AssemblyReference.cache
+C:\Users\smccoo\Source\Repos\grupotecnologiasfotonicas\PuertoSerie\PuertoSerie\obj\Debug\PuertoSerie.csproj.CoreCompileInputs.cache
+C:\Users\smccoo\Source\Repos\grupotecnologiasfotonicas\PuertoSerie\PuertoSerie\obj\Debug\PuertoSerie.dll
+C:\Users\smccoo\Source\Repos\grupotecnologiasfotonicas\PuertoSerie\PuertoSerie\obj\Debug\PuertoSerie.pdb
+C:\Users\María\Desktop\Láser\PuertoSerie\PuertoSerie\bin\Debug\PuertoSerie.dll
+C:\Users\María\Desktop\Láser\PuertoSerie\PuertoSerie\bin\Debug\PuertoSerie.pdb
+C:\Users\María\Desktop\Láser\PuertoSerie\PuertoSerie\obj\Debug\PuertoSerie.csproj.AssemblyReference.cache
+C:\Users\María\Desktop\Láser\PuertoSerie\PuertoSerie\obj\Debug\PuertoSerie.csproj.CoreCompileInputs.cache
+C:\Users\María\Desktop\Láser\PuertoSerie\PuertoSerie\obj\Debug\PuertoSerie.dll
+C:\Users\María\Desktop\Láser\PuertoSerie\PuertoSerie\obj\Debug\PuertoSerie.pdb

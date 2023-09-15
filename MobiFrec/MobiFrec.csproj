@@ -87,7 +87,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\PuertoSerie\PuertoSerie.csproj">
+    <ProjectReference Include="..\PuertoSerie\PuertoSerie.csproj">
       <Project>{9806b283-7c67-4fbc-92f1-71be5314b5b5}</Project>
       <Name>PuertoSerie</Name>
     </ProjectReference>

@@ -1,0 +1,14 @@
+C:\Users\María\source\repos\MobiFrec\MobiFrec\obj\Debug\MobiFrec.csproj.AssemblyReference.cache
+C:\Users\María\source\repos\MobiFrec\MobiFrec\obj\Debug\MobiFrec.csproj.SuggestedBindingRedirects.cache
+C:\Users\María\source\repos\MobiFrec\MobiFrec\obj\Debug\PruebaPuertoSerie.MobiFrec.resources
+C:\Users\María\source\repos\MobiFrec\MobiFrec\obj\Debug\PruebaPuertoSerie.Properties.Resources.resources
+C:\Users\María\source\repos\MobiFrec\MobiFrec\obj\Debug\MobiFrec.csproj.GenerateResource.cache
+C:\Users\María\source\repos\MobiFrec\MobiFrec\obj\Debug\MobiFrec.csproj.CoreCompileInputs.cache
+C:\Users\María\source\repos\MobiFrec\MobiFrec\obj\Debug\PruebaPuertoSerie.exe
+C:\Users\María\source\repos\MobiFrec\MobiFrec\obj\Debug\PruebaPuertoSerie.pdb
+C:\Users\María\source\repos\MobiFrec\MobiFrec\bin\Debug\PruebaPuertoSerie.exe.config
+C:\Users\María\source\repos\MobiFrec\MobiFrec\bin\Debug\PruebaPuertoSerie.exe
+C:\Users\María\source\repos\MobiFrec\MobiFrec\bin\Debug\PruebaPuertoSerie.pdb
+C:\Users\María\source\repos\MobiFrec\MobiFrec\bin\Debug\PuertoSerie.dll
+C:\Users\María\source\repos\MobiFrec\MobiFrec\bin\Debug\PuertoSerie.pdb
+C:\Users\María\source\repos\MobiFrec\MobiFrec\obj\Debug\MobiFrec.csproj.CopyComplete

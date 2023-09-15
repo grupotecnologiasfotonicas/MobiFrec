@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobiFrec", "PruebaPuertoSerie\MobiFrec.csproj", "{7544F582-B912-4E29-81B1-4AD84585C5EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobiFrec", "MobiFrec\MobiFrec.csproj", "{7544F582-B912-4E29-81B1-4AD84585C5EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuertoSerie", "..\PuertoSerie\PuertoSerie.csproj", "{9806B283-7C67-4FBC-92F1-71BE5314B5B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuertoSerie", "PuertoSerie\PuertoSerie.csproj", "{9806B283-7C67-4FBC-92F1-71BE5314B5B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
