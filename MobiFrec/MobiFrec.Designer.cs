@@ -50,7 +50,7 @@
             // 
             // textBoxRespuesta
             // 
-            this.textBoxRespuesta.Location = new System.Drawing.Point(78, 102);
+            this.textBoxRespuesta.Location = new System.Drawing.Point(82, 102);
             this.textBoxRespuesta.Name = "textBoxRespuesta";
             this.textBoxRespuesta.Size = new System.Drawing.Size(61, 20);
             this.textBoxRespuesta.TabIndex = 43;
@@ -88,7 +88,7 @@
             // 
             this.comboBoxPuertos.FormattingEnabled = true;
             this.comboBoxPuertos.Location = new System.Drawing.Point(62, 25);
-            this.comboBoxPuertos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxPuertos.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxPuertos.Name = "comboBoxPuertos";
             this.comboBoxPuertos.Size = new System.Drawing.Size(61, 21);
             this.comboBoxPuertos.TabIndex = 45;
@@ -122,11 +122,11 @@
             this.textBoxBuscar.Text = "0";
             this.textBoxBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // Principal
+            // MobiFrec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(247, 150);
+            this.ClientSize = new System.Drawing.Size(296, 195);
             this.Controls.Add(this.textBoxBuscar);
             this.Controls.Add(this.buttonBuscar);
             this.Controls.Add(this.label1);
@@ -136,8 +136,8 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.buttonEnviar);
             this.Controls.Add(this.textBoxComando);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Principal";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "MobiFrec";
             this.Text = "Prueba de puerto serie";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.ResumeLayout(false);
