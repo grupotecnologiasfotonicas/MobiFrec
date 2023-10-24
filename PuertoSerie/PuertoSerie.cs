@@ -58,10 +58,10 @@ namespace Serie
                 serialPort.WriteLine(instruccion);
                 string resp = serialPort.ReadLine();
                 serialPort.Close();
-                ocupado = false;
+                ocupado = false;//El puerto ya no esta ocupado
                 return resp;
             }
-            catch (Exception ex)
+            catch (Exception ex)// erorr con el puerto serie-> puerto no se puede abrir o error en la comunicación
             {
                 respuesta = MessageBox.Show(ex.Message, "Error en el puerto " + serialPort.PortName, MessageBoxButtons.AbortRetryIgnore);
                 if (respuesta == DialogResult.Retry)
@@ -71,26 +71,29 @@ namespace Serie
                     return Enviar(instruccion);
                 }
                 if (respuesta == DialogResult.Abort)
+                {
                     simulado = true;
+                }
+                
+
             }
             ocupado = false;
             return "%0000100";
         }
 
-        public int Enviar(byte[] instruccion, int nBytesRespuesta) //para el monocromador
+        public String Enviar(byte[] instruccion, int nBytesRespuesta) //para el monocromador
         { 
             DialogResult respuesta;
             bool espera = false;
             if (nBytesRespuesta == 0)
                 espera = true;
-            byte[] respB = new byte[nBytesRespuesta];
-            int resp=0;
-            byte[] statusB = new byte[10];
-            byte[] cancelB = new byte[10];
+            byte[] respB = new byte[10];
+            String resp="";
+
 
             if (simulado)
             {
-                return 1;
+                return "1";
             }
 
             while (ocupado)
@@ -100,13 +103,16 @@ namespace Serie
             {
                 serialPort.Open();
                 serialPort.Write(instruccion, 0, instruccion.Length);
+                serialPort.Read(respB, 0, 1);
 
-                for (int i = 0; i < nBytesRespuesta; i++)
+                int i = 0;
+                do
+                {
                     serialPort.Read(respB, i, 1);//hay que leer de uno en uno porque si no se lía
-                //serialPort.Read(statusB, 0, 1);
-                if (statusB[0] > 127)
-                    MessageBox.Show("Comando no aceptado");
-                cancelB[0] = 0;
+                    i++;
+                }
+                while (respB[i-1] != 126);
+
                 Cursor cursorAnterior = Cursor.Current;
                 Cursor.Current = Cursors.WaitCursor;
                 if (espera)
@@ -114,11 +120,10 @@ namespace Serie
                     while (serialPort.BytesToRead == 0)
                         Application.DoEvents();
                 }
-                //serialPort.Read(cancelB, 0, 1);
-    
                 Cursor.Current = cursorAnterior;
-                //if (cancelB[0] != 24)
-                //    MessageBox.Show("Acción no realizada");
+
+                for (int j = 0; j < i-1; j++)
+                    resp += respB[j].ToString("X") + " ";//para convertirlo en hexadecimal, si quitamos el "X" lo obtenemos en decimal
             }
 
             catch (Exception ex)
@@ -135,10 +140,6 @@ namespace Serie
             }
             serialPort.Close();
             ocupado = false;
-            if (nBytesRespuesta == 1)
-                resp = respB[0];
-            if (nBytesRespuesta == 2)
-                resp = 256*respB[0]+respB[1];
             return resp;
         }
 
@@ -155,7 +156,7 @@ namespace Serie
             {
                 serialPort.Open();
                 DateTime inicio = DateTime.Now;
-                while((serialPort.BytesToRead == 0)&&((DateTime.Now-inicio).TotalSeconds<10))
+                while((serialPort.BytesToRead == 0)&&((DateTime.Now-inicio).TotalSeconds<20))
                     Application.DoEvents();
                 string resp = serialPort.ReadLine();
                 serialPort.Close();
@@ -167,6 +168,7 @@ namespace Serie
                 //string resp = serialPort.ReadLine();
                 //MessageBox.Show(ex.Message, "Error en el puerto " + serialPort.PortName);
                 serialPort.Close();
+                simulado = true;
                 ocupado = false;
                 return "%0000100";
             }

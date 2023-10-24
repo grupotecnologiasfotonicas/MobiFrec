@@ -10,3 +10,9 @@ C:\Users\María\Desktop\Láser\PuertoSerie\PuertoSerie\obj\Debug\PuertoSerie.csp
 C:\Users\María\Desktop\Láser\PuertoSerie\PuertoSerie\obj\Debug\PuertoSerie.csproj.CoreCompileInputs.cache
 C:\Users\María\Desktop\Láser\PuertoSerie\PuertoSerie\obj\Debug\PuertoSerie.dll
 C:\Users\María\Desktop\Láser\PuertoSerie\PuertoSerie\obj\Debug\PuertoSerie.pdb
+C:\Users\María\source\repos\MobiFrec\PuertoSerie\bin\Debug\PuertoSerie.dll
+C:\Users\María\source\repos\MobiFrec\PuertoSerie\bin\Debug\PuertoSerie.pdb
+C:\Users\María\source\repos\MobiFrec\PuertoSerie\obj\Debug\PuertoSerie.csproj.AssemblyReference.cache
+C:\Users\María\source\repos\MobiFrec\PuertoSerie\obj\Debug\PuertoSerie.csproj.CoreCompileInputs.cache
+C:\Users\María\source\repos\MobiFrec\PuertoSerie\obj\Debug\PuertoSerie.dll
+C:\Users\María\source\repos\MobiFrec\PuertoSerie\obj\Debug\PuertoSerie.pdb

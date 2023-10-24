@@ -107,13 +107,13 @@ void loop()
           escribirGanancia(valor0);
           break;
         }
-        case 'D': //SE MUEVE EN LA POSICION DE X,Y
+        case 'P': //SE MUEVE EN LA POSICION DE X,Y
         { 
           PosicionGrados(valor0,valor1);
           Serial.println("Se ha movido el laser");
           break;
         }
-        case 'L': //SIGUE UNA SERIE DE PUNTOS DE X E Y
+        case 'L': //SIGUE UNA SERIE DE PUNTOS DE X0 A x1 y DE Y0 a Y1
         { 
           previo = micros();
           linea(valor0,valor1,valor2,valor3);
@@ -123,7 +123,7 @@ void loop()
           Serial.println(" us ");
           break;
         }
-        case 'R': //DESPLAZAMIENTO EN EL EJE X
+        case 'X': //DESPLAZAMIENTO A UN PUNTO DEL EJE X
         { 
           previo = micros();
           rectaX(valor0);
@@ -143,7 +143,7 @@ void loop()
           Serial.println(" us ");
           break;
         }
-         case 'B': //DESPLAZAMIENTO A UN PUNTO Y
+         case 'Y': //DESPLAZAMIENTO A UN PUNTO Y
         { 
           previo = micros();
           rectaY(valor0);
@@ -153,7 +153,7 @@ void loop()
           Serial.println(" us ");
           break;
         }
-         case 'A': //DESPLAZAMIENTO EJE X
+         case 'A': //DESPLAZAMIENTO A 2 PUNTOS DEL EJE X
         { 
           previo = micros();
           lineaX(valor0,valor1);
@@ -163,7 +163,7 @@ void loop()
           Serial.println(" us ");
           break;
         }
-         case 'P': //DESPLAZAMIENT0 EN PENDIENTE, DIAGONAL
+         case 'D': // DIAGONAL
         { 
           previo = micros();
           pendiente(valor0, valor1);

@@ -260,12 +260,12 @@ void circulo(int val0)  //FUNCION QUE PIDE EL RADIO PARA PINTAR LA CIRCUNFERENCI
   double posicionY = 0;
 
   radio = 1000*(abs(val0));
-  for (angulo=0; angulo<=6.283185307; angulo=angulo+1.047197551){  //ARDUINO TRABAJA CON RADIANES, BARRIDO DE 0 A 2PI 
+  for (angulo=0; angulo<=6.283185307; angulo=angulo+0.01){  //ARDUINO TRABAJA CON RADIANES, BARRIDO DE 0 A 2PI 
     double posicionX = radio*cos(angulo);               //pi/4 = 0.785398163; pi/6 = 0.523598775; pi/3 = 1.047197551
     double posicionY = radio*sin(angulo);
     Serial.println(posicionX);
     Serial.println(posicionY);
-    delay(500);
+    //delay(500);
     if (posicionX>=0 && posicionY>=0){
       dac1.setDACOutVoltage(posicionY,0);
       dac2.setDACOutVoltage(posicionX,0);
@@ -275,22 +275,22 @@ void circulo(int val0)  //FUNCION QUE PIDE EL RADIO PARA PINTAR LA CIRCUNFERENCI
       dac2.setDACOutVoltage(0,0);
       dac1.setDACOutVoltage(abs(posicionY),0);
       dac2.setDACOutVoltage(abs(posicionX),1);
-      delay(500);
+      //delay(500);
     }
     else if (posicionX<0 && posicionY<0){
       dac1.setDACOutVoltage(0,0);
       dac1.setDACOutVoltage(abs(posicionY),1);
       dac2.setDACOutVoltage(abs(posicionX),1);
-      delay(500);
+      //delay(500);
     }
      else if (posicionX>=0 && posicionY<0){
       dac2.setDACOutVoltage(0,1);
       dac1.setDACOutVoltage(abs(posicionY),1);
       dac2.setDACOutVoltage(abs(posicionX),0);
-      delay(500);
+      //delay(500);
     }
     
-    delay(10);
+    //delay(10);
   }
 }
 
@@ -650,7 +650,7 @@ int leerGanancia()
 
 void escribirGanancia(int valor)
 { 
-  Serial.println("el valor es el siguiente");
+  //Serial.println("el valor es el siguiente");
   Wire.beginTransmission(DIR_POT);
   Wire.write(0);// RDAC RS SD 01 02 three dont care bits
   Wire.write(valor);// valor del potenciómetro

@@ -1,4 +1,4 @@
-﻿namespace PruebaPuertoSerie
+﻿namespace MobiFrec
 {
     partial class MobiFrec
     {
@@ -37,6 +37,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.textBoxBuscar = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBoxPuertosArduino = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxComandoArduino = new System.Windows.Forms.TextBox();
+            this.buttonEnviarArduino = new System.Windows.Forms.Button();
+            this.buttonBuscarArduino = new System.Windows.Forms.Button();
+            this.textBoxBuscarArduino = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxRespuestaArduino = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label11
@@ -50,17 +59,17 @@
             // 
             // textBoxRespuesta
             // 
-            this.textBoxRespuesta.Location = new System.Drawing.Point(82, 102);
+            this.textBoxRespuesta.Location = new System.Drawing.Point(83, 103);
             this.textBoxRespuesta.Name = "textBoxRespuesta";
-            this.textBoxRespuesta.Size = new System.Drawing.Size(61, 20);
+            this.textBoxRespuesta.Size = new System.Drawing.Size(167, 20);
             this.textBoxRespuesta.TabIndex = 43;
             this.textBoxRespuesta.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // buttonEnviar
             // 
-            this.buttonEnviar.Location = new System.Drawing.Point(158, 62);
+            this.buttonEnviar.Location = new System.Drawing.Point(256, 63);
             this.buttonEnviar.Name = "buttonEnviar";
-            this.buttonEnviar.Size = new System.Drawing.Size(58, 36);
+            this.buttonEnviar.Size = new System.Drawing.Size(96, 36);
             this.buttonEnviar.TabIndex = 42;
             this.buttonEnviar.Text = "Enviar";
             this.buttonEnviar.UseVisualStyleBackColor = true;
@@ -77,9 +86,9 @@
             // 
             // textBoxComando
             // 
-            this.textBoxComando.Location = new System.Drawing.Point(78, 71);
+            this.textBoxComando.Location = new System.Drawing.Point(79, 72);
             this.textBoxComando.Name = "textBoxComando";
-            this.textBoxComando.Size = new System.Drawing.Size(61, 20);
+            this.textBoxComando.Size = new System.Drawing.Size(171, 20);
             this.textBoxComando.TabIndex = 40;
             this.textBoxComando.Text = "7E0164BD337E";
             this.textBoxComando.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -92,7 +101,7 @@
             this.comboBoxPuertos.Name = "comboBoxPuertos";
             this.comboBoxPuertos.Size = new System.Drawing.Size(61, 21);
             this.comboBoxPuertos.TabIndex = 45;
-            this.comboBoxPuertos.Text = "COM11";
+            this.comboBoxPuertos.Text = "COM1";
             // 
             // label1
             // 
@@ -105,9 +114,9 @@
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Location = new System.Drawing.Point(136, 24);
+            this.buttonBuscar.Location = new System.Drawing.Point(256, 28);
             this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(58, 21);
+            this.buttonBuscar.Size = new System.Drawing.Size(60, 21);
             this.buttonBuscar.TabIndex = 47;
             this.buttonBuscar.Text = "Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = true;
@@ -115,18 +124,110 @@
             // 
             // textBoxBuscar
             // 
-            this.textBoxBuscar.Location = new System.Drawing.Point(200, 25);
+            this.textBoxBuscar.Location = new System.Drawing.Point(322, 26);
             this.textBoxBuscar.Name = "textBoxBuscar";
             this.textBoxBuscar.Size = new System.Drawing.Size(30, 20);
             this.textBoxBuscar.TabIndex = 48;
             this.textBoxBuscar.Text = "0";
             this.textBoxBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 162);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "Puerto Arduino:";
+            // 
+            // comboBoxPuertosArduino
+            // 
+            this.comboBoxPuertosArduino.FormattingEnabled = true;
+            this.comboBoxPuertosArduino.Location = new System.Drawing.Point(105, 159);
+            this.comboBoxPuertosArduino.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxPuertosArduino.Name = "comboBoxPuertosArduino";
+            this.comboBoxPuertosArduino.Size = new System.Drawing.Size(61, 21);
+            this.comboBoxPuertosArduino.TabIndex = 50;
+            this.comboBoxPuertosArduino.Text = "COM5";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 202);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 13);
+            this.label3.TabIndex = 51;
+            this.label3.Text = "Comando Arduino:";
+            // 
+            // textBoxComandoArduino
+            // 
+            this.textBoxComandoArduino.Location = new System.Drawing.Point(126, 199);
+            this.textBoxComandoArduino.Name = "textBoxComandoArduino";
+            this.textBoxComandoArduino.Size = new System.Drawing.Size(77, 20);
+            this.textBoxComandoArduino.TabIndex = 52;
+            this.textBoxComandoArduino.Text = "S";
+            this.textBoxComandoArduino.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // buttonEnviarArduino
+            // 
+            this.buttonEnviarArduino.Location = new System.Drawing.Point(211, 190);
+            this.buttonEnviarArduino.Name = "buttonEnviarArduino";
+            this.buttonEnviarArduino.Size = new System.Drawing.Size(96, 36);
+            this.buttonEnviarArduino.TabIndex = 53;
+            this.buttonEnviarArduino.Text = " Enviar Arduino";
+            this.buttonEnviarArduino.UseVisualStyleBackColor = true;
+            this.buttonEnviarArduino.Click += new System.EventHandler(this.buttonEnviarArduino_Click);
+            // 
+            // buttonBuscarArduino
+            // 
+            this.buttonBuscarArduino.Location = new System.Drawing.Point(211, 154);
+            this.buttonBuscarArduino.Name = "buttonBuscarArduino";
+            this.buttonBuscarArduino.Size = new System.Drawing.Size(58, 21);
+            this.buttonBuscarArduino.TabIndex = 54;
+            this.buttonBuscarArduino.Text = "Buscar";
+            this.buttonBuscarArduino.UseVisualStyleBackColor = true;
+            this.buttonBuscarArduino.Click += new System.EventHandler(this.buttonBuscarArduino_Click);
+            // 
+            // textBoxBuscarArduino
+            // 
+            this.textBoxBuscarArduino.Location = new System.Drawing.Point(277, 155);
+            this.textBoxBuscarArduino.Name = "textBoxBuscarArduino";
+            this.textBoxBuscarArduino.Size = new System.Drawing.Size(30, 20);
+            this.textBoxBuscarArduino.TabIndex = 55;
+            this.textBoxBuscarArduino.Text = "0";
+            this.textBoxBuscarArduino.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(20, 236);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 13);
+            this.label4.TabIndex = 56;
+            this.label4.Text = "Respuesta Arduino:";
+            // 
+            // textBoxRespuestaArduino
+            // 
+            this.textBoxRespuestaArduino.Location = new System.Drawing.Point(126, 233);
+            this.textBoxRespuestaArduino.Name = "textBoxRespuestaArduino";
+            this.textBoxRespuestaArduino.Size = new System.Drawing.Size(77, 20);
+            this.textBoxRespuestaArduino.TabIndex = 57;
+            this.textBoxRespuestaArduino.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // MobiFrec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(296, 195);
+            this.ClientSize = new System.Drawing.Size(382, 307);
+            this.Controls.Add(this.textBoxRespuestaArduino);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBoxBuscarArduino);
+            this.Controls.Add(this.buttonBuscarArduino);
+            this.Controls.Add(this.buttonEnviarArduino);
+            this.Controls.Add(this.textBoxComandoArduino);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBoxPuertosArduino);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxBuscar);
             this.Controls.Add(this.buttonBuscar);
             this.Controls.Add(this.label1);
@@ -155,6 +256,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonBuscar;
         private System.Windows.Forms.TextBox textBoxBuscar;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBoxPuertosArduino;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxComandoArduino;
+        private System.Windows.Forms.Button buttonEnviarArduino;
+        private System.Windows.Forms.Button buttonBuscarArduino;
+        private System.Windows.Forms.TextBox textBoxBuscarArduino;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxRespuestaArduino;
     }
 }
 
